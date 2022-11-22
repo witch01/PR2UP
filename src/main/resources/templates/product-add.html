@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="${'/product/add'}" method="post">
+  <input type="text" name="names" placeholder="Название">
+  <input type="date" name="dr" maxlength="8">
+  <input type="checkbox" name="online">
+  <input type="number" name="cent" placeholder="Стоимость">
+  <input type="number" name="quantity" placeholder="Остаток">
+  <br>
+  <button type="submit">Добавить товар</button>
+</form>
+</body>
+</html>

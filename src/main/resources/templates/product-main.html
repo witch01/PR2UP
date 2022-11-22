@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Все товары</h1>
+<a href="/product/filter">Поиск товара</a>
+<a href="/product/add">Добавить товар</a>
+<div th:each="el : ${product}">
+  <h3 th:text="${el.names}"></h3>
+  <p th:text="${el.cent}"></p>
+</div>
+</body>
+</html>
